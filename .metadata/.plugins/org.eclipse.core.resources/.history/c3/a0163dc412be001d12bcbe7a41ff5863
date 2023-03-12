@@ -1,0 +1,10 @@
+package test;
+
+import com.mysql.cj.xdevapi.SessionFactory;
+
+public class CateTest {
+
+	public static void main(String[] args) {
+		SessionFactory session
+	}
+}

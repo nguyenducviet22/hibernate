@@ -1,0 +1,14 @@
+package test;
+
+
+import util.HibernateUtil;
+
+public class CateTest {
+
+	public static void main(String[] args) {
+		SessionFactory sessionFactory = HibernateUtil.getSessionFactory();
+		if (sessionFactory != null) {
+			
+		}
+	}
+}

@@ -1,0 +1,24 @@
+package test;
+
+
+import javax.transaction.Transaction;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+
+import util.HibernateUtil;
+
+public class CateTest {
+
+	public static void main(String[] args) {
+		SessionFactory sessionFactory = HibernateUtil.getSessionFactory();
+		if (sessionFactory != null) {
+			Session session = sessionFactory.openSession();
+			Transaction trans = (Transaction) session.beginTransaction();
+			
+			
+			trans.commit();
+			session.close();
+		}
+	}
+}
